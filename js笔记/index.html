@@ -26,7 +26,7 @@
 <meta property="og:description" content="js中大数值精度丢失数值超过16位后会精度丢失,此时无论是直接打印还是调用Number()，值都会发生改变导致不准确。代码示例: 12345const a &#x3D; &amp;#x27;12345678901234567&amp;#x27;const b &#x3D; Number(a)console.log(b);&#x2F;&#x2F;b&#x3D;12345678901234568const c &#x3D; 12345678901234565console.l">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-05-15T15:09:09.000Z">
-<meta property="article:modified_time" content="2023-05-22T16:27:47.445Z">
+<meta property="article:modified_time" content="2023-06-06T16:09:55.251Z">
 <meta property="article:author" content="zhj">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
@@ -356,6 +356,7 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <h2 id="js中大数值精度丢失"><a href="#js中大数值精度丢失" class="headerlink" title="js中大数值精度丢失"></a>js中大数值精度丢失</h2><p>数值超过16位后会精度丢失,此时无论是直接打印还是调用Number()，值都会发生改变导致不准确。代码示例:<br> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="string">&#x27;12345678901234567&#x27;</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="title class_">Number</span>(a)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(b);<span class="comment">//b=12345678901234568</span></span><br><span class="line"><span class="keyword">const</span> c = <span class="number">12345678901234565</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(c); <span class="comment">//c=12345678901234564</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="数组的indexOf和findIndex"><a href="#数组的indexOf和findIndex" class="headerlink" title="数组的indexOf和findIndex"></a>数组的indexOf和findIndex</h2><p>相同点:findIndex()与indexOf()都是返回数组中第一个满足条件的项的下标,如果不存在返回-1<br>不同点:findIndex比indexOf更强大一些，可以通过回调函数查找对象数组，indexOf只能查找数组中指定的值，不过indexOf可以指定开始查找位置的索引</p>
 
       
     </div>
